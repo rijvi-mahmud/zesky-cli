@@ -1,24 +1,28 @@
 {
-  "name": "zesky",
+  "name": "test-cli",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/bin/index.js",
+  "bin": {
+    "test-cli": "./dist/bin"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "dev": "jiti src/bin/index.ts"
+    "dev": "tsc --watch",
+    "link-cli": "yarn --global link ./dist/bin && yarn --global unlink test-cli && yarn --global link ./dist/bin"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
-  "devDependencies": {
-    "typescript": "^5.5.4"
-  },
   "dependencies": {
     "@clack/core": "^0.3.4",
     "@clack/prompts": "^0.7.0",
-    "@types/node": "^22.5.1",
-    "chalk": "^5.3.0",
-    "jiti": "^1.21.6"
+    "chalk": "4.1.2",
+    "jiti": "^1.21.6",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.4"
   }
 }

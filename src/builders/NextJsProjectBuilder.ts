@@ -84,11 +84,11 @@
 
 
 import { isCancel, note, select, text } from "@clack/prompts";
-import { ProjectOptions } from "../types";
-import { ProjectBuilder } from "./ProjectBuilder";
-import { ComponentLibraryInstaller } from "../modules/componentLibraryInstaller";
 import chalk from "chalk";
+import { ProjectBuilder } from "./ProjectBuilder";
 import { CommandExecutor } from "../utils/lib/CommandExecutor";
+import { ComponentLibraryInstaller } from "../modules/componentLibraryInstaller.js";
+import { ProjectOptions } from "../types/ProjectOptions";
 
 export class NextJsProjectBuilder extends ProjectBuilder {
   constructor(pkgManager: string, framework: string) {
@@ -140,6 +140,8 @@ export class NextJsProjectBuilder extends ProjectBuilder {
       await this.installUILibrary(options.uiLibrary);
     }
   }
+
+  
 
   private async promptUILibrary(): Promise<string> {
     const library = await select({

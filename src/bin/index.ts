@@ -1,8 +1,10 @@
+#!/usr/bin/env node
+
 import { select, isCancel, intro, note } from "@clack/prompts";
-import { PKG_MANAGER } from "../types/constant";
-import { ProjectBuilderFactory } from "../builders/ProjectBuilderFactory";
 
 import chalk from "chalk";
+import { ProjectBuilderFactory } from "../builders/ProjectBuilderFactory";
+import { PKG_MANAGER } from "../types/constant";
 
 intro(chalk.green.bold("Welcome to Zesky!"));
 
@@ -43,3 +45,4 @@ async function main(): Promise<void> {
 }
 
 main();
+
