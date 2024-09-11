@@ -35,7 +35,7 @@ Run zesky-cli with
 ## Contributing
 
 Contributions are always welcome!
-
+Please read our [Contribution Guidelines](./CONTRIBUTE.md) for details on how to contribute to the project.
 
 
 ## Run Locally
