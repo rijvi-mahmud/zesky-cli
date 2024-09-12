@@ -1,18 +1,18 @@
 {
-  "name": "test-cli",
-  "version": "1.0.0",
+  "name": "zesky-cli",
+  "version": "1.0.2",
   "main": "dist/bin/index.js",
   "bin": {
-    "test-cli": "./dist/bin"
+    "zesky-cli": "./dist/bin/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "dev": "tsc --watch",
-    "link-cli": "yarn --global link ./dist/bin && yarn --global unlink test-cli && yarn --global link ./dist/bin"
+    "link-cli": "npm unlink -g zesky-cli && npm link --force && chmod +x ./dist/bin/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rijvi Mahmud",
   "license": "ISC",
   "description": "",
   "dependencies": {
