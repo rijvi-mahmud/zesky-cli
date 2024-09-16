@@ -8,6 +8,7 @@ export class CommandExecutor {
       const process = spawn(command, args, {
         cwd,
         stdio: "inherit",
+        shell: true,
       });
 
       process.on("error", (error) => {

@@ -1,6 +1,6 @@
 {
   "name": "zesky-cli",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "main": "dist/bin/index.js",
   "bin": {
     "zesky-cli": "./dist/bin/index.js"
