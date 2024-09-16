@@ -3,8 +3,8 @@
 import { select, isCancel, intro, note } from "@clack/prompts";
 
 import chalk from "chalk";
-import { ProjectBuilderFactory } from "../builders/ProjectBuilderFactory";
-import { PKG_MANAGER } from "../types/constant";
+import { ProjectBuilderFactory } from "../builders/ProjectBuilderFactory.js";
+import { PKG_MANAGER } from "../types/constant.js";
 
 intro(chalk.green.bold("Welcome to Zesky!"));
 

@@ -85,10 +85,10 @@
 
 import { isCancel, note, select, text } from "@clack/prompts";
 import chalk from "chalk";
-import { ProjectBuilder } from "./ProjectBuilder";
-import { CommandExecutor } from "../utils/lib/CommandExecutor";
+import { ProjectBuilder } from "./ProjectBuilder.js";
+import { CommandExecutor } from "../utils/lib/CommandExecutor.js";
 import { ComponentLibraryInstaller } from "../modules/componentLibraryInstaller.js";
-import { ProjectOptions } from "../types/ProjectOptions";
+import { ProjectOptions } from "../types/ProjectOptions.js";
 
 export class NextJsProjectBuilder extends ProjectBuilder {
   constructor(pkgManager: string, framework: string) {

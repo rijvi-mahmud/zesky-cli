@@ -1,5 +1,5 @@
-import { UILibrariesInstall } from "../uiLibraries.interface";
-import { ShadCnNextJs } from "./shadcnNextJs";
+import { UILibrariesInstall } from "../uiLibraries.interface.js";
+import { ShadCnNextJs } from "./shadcnNextJs.js";
 
 
 class ShadCnInstaller implements UILibrariesInstall {

@@ -1,5 +1,5 @@
-import { NextJsProjectBuilder } from "./NextJsProjectBuilder";
-import { ProjectBuilder } from "./ProjectBuilder";
+import { NextJsProjectBuilder } from "./NextJsProjectBuilder.js";
+import { ProjectBuilder } from "./ProjectBuilder.js";
 
 export class ProjectBuilderFactory {
   static createProjectBuilder(pkgManager: string, framework: string): ProjectBuilder {

@@ -2,6 +2,7 @@
   "name": "zesky-cli",
   "version": "1.0.4",
   "main": "dist/bin/index.js",
+  "type": "module",
   "bin": {
     "zesky-cli": "./dist/bin/index.js"
   },
@@ -19,6 +20,7 @@
     "@clack/core": "^0.3.4",
     "@clack/prompts": "^0.7.0",
     "chalk": "4.1.2",
+    "execa": "^9.3.1",
     "jiti": "^1.21.6",
     "typescript": "^5.5.4"
   },

@@ -1,5 +1,5 @@
-import { ComponentLibraryInstall } from "./interface/componentLibraryInstall.interface";
-import { ShadCnInstaller } from "./ui-libraries/shadcn/shadcn";
+import { ComponentLibraryInstall } from "./interface/componentLibraryInstall.interface.js";
+import { ShadCnInstaller } from "./ui-libraries/shadcn/shadcn.js";
 
 class ComponentLibraryInstaller implements ComponentLibraryInstall {
     install(framework: string, cwd: string): Promise<void> {

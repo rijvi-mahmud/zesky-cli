@@ -1,6 +1,6 @@
-import { CommandExecutor } from "../utils/lib/CommandExecutor";
-import { DirectoryHandler } from "../utils/lib/DirectoryHandler";
-import { Prompter } from "../utils/lib/Prompter";
+import { CommandExecutor } from "../utils/lib/CommandExecutor.js";
+import { DirectoryHandler } from "../utils/lib/DirectoryHandler.js";
+import { Prompter } from "../utils/lib/Prompter.js";
 
 export abstract class ProjectBuilder {
   protected pkgManager: string;

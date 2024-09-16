@@ -1,4 +1,4 @@
-import { CommandExecutor } from "../../../utils/lib/CommandExecutor";
+import { CommandExecutor } from "../../../utils/lib/CommandExecutor.js";
 
 export class ShadCnNextJs{
     async install(cwd: string): Promise<void> {
